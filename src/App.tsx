@@ -1,8 +1,14 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 const App: FunctionComponent = () => {
+  const [state] = useState();
+  useEffect(() => {
+    if (state) {
+      console.log(state);
+    }
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
