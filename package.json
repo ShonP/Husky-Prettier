@@ -17,7 +17,7 @@
     "web-vitals": "^1.0.1"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
+    "src/**/*.{js,jsx,ts,tsx}": [
       "eslint"
     ]
   },
@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postinstall": "husky install",
-    "format-lint": "pretty-quick --staged "
+    "format-lint": "pretty-quick --staged && lint-staged"
   },
   "eslintConfig": {
     "extends": [
